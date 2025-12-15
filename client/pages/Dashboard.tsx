@@ -14,6 +14,7 @@ import {
   Home,
   BarChart3,
   Loader2,
+  Heart,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import MiniChatbot from "@/components/MiniChatbot";
