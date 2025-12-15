@@ -5,9 +5,16 @@
 
 [functions]
   node_bundler = "esbuild"
-  
+
+# API routes - must come first
 [[redirects]]
-  force = true
   from = "/api/*"
-  status = 200
   to = "/.netlify/functions/api/:splat"
+  status = 200
+  force = true
+
+# SPA fallback - must come last
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
