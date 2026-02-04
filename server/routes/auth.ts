@@ -10,7 +10,7 @@ const UserModel = User as any;
 const signupSchema = z.object({
   name: z.string().min(1),
   email: z.string().email(),
-  password: z.string().min(8),
+  password: z.string().min(6),
   role: z.enum(["student", "counsellor", "admin"]).optional(),
   university: z.string().optional(),
 });

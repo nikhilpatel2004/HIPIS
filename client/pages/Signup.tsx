@@ -191,7 +191,7 @@ export default function Signup() {
                     className="h-10"
                   />
                   <p className="text-xs text-muted-foreground">
-                    At least 8 characters with uppercase, lowercase, and numbers
+                    At least 6 characters with uppercase, lowercase, and numbers
                   </p>
                 </div>
 
